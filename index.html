@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Adamina&family=Actor&family=Roboto&family=Akaya+Kanadaka&family=Kelly+Slab&family=Pangolin&display=swap"
+      rel="stylesheet" />
+    <title>Главная</title>
+  </head>
+  <body>
+    <div
+      class="header__container-wrapper_modal"
+      style="transform: translate(0px, -100%); display: none">
+      <menu>
+        <ul class="wrapper_modal-list">
+          <li class="wrapper_modal-list_item">
+            <a href="./index.html" class="wrapper_modal-list_link">Главная</a>
+          </li>
+          <li class="wrapper_modal-list_item">
+            <a href="./tape.html" class="wrapper_modal-list_link">Лента</a>
+          </li>
+          <li class="wrapper_modal-list_item">
+            <a href="./basket.html" class="wrapper_modal-list_link">Корзина</a>
+          </li>
+        </ul>
+      </menu>
+    </div>
+
+    <header>
+      <nav class="header__nav">
+        <h1 class="logo__name">Барахолка.ру</h1>
+        <div class="header__container-wrapper_but">
+          <img src="images/main/Menu.svg" width="100%" />
+        </div>
+        <div class="header__nav-right">
+          <input class="input__search" type="text" placeholder="Поиск" />
+          <input class="input__tel" type="button" value="+123 123 123 12" />
+          <div class="user-lang">
+            <img src="/images/main/user-icon.png" alt="user" />
+            <span class="languages"
+              ><strong style="color: black">RU</strong>/ENG</span
+            >
+          </div>
+        </div>
+      </nav>
+      <nav class="header__nav-links">
+        <div class="container__nav">
+          <ul class="header__ul">
+            <li>Наборы</li>
+            <li data-active="active">Все товары</li>
+            <li>Обработка</li>
+            <li>Продавцы</li>
+            <li>Информация</li>
+
+            <div style="display: flex; align-items: center">
+              <li class="header__ul-sale">шопперы со скидкой - 25%</li>
+
+              <img src="/images/main/header__nav-links.png" alt="img" />
+            </div>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="container">
+        <section class="aboutUs">
+          <div class="aboutUs__left-block">
+            <h1 class="aboutUs__title">Свежее дыхание твоей одежде</h1>
+            <p class="aboutUs__description">
+              Устал от своей одежды? Не беда! Мы предлагаем тебе не только
+              подарить вторую жизнь одежде, ведь так ты поможешь сохранить
+              экологию, но и заработать на этом!
+            </p>
+            <div class="aboutUs__services">
+              <div class="aboutUs__service">
+                <img src="/images/main/circle.png" alt="circle" />
+                <p>Обработка одежды</p>
+              </div>
+              <div class="aboutUs__service">
+                <img src="/images/main/circle.png" alt="circle" />
+                <p>Поддержка менеджера 24/7</p>
+              </div>
+              <div class="aboutUs__service">
+                <img src="/images/main/circle.png" alt="circle" />
+                <p>Быстрые покупатели</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <img src="/images/main/two-girls.png" alt="girls" class="girls" />
+          </div>
+        </section>
+      </div>
+    </header>
+
+    <main>
+      <section class="top-popular">
+        <div class="container">
+          <section class="top-popular__main">
+            <nav class="top-popular__main-nav">
+              <div style="position: relative">
+                <img
+                  class="top-popular__star"
+                  src="/images/main/star.png"
+                  alt="star" />
+                <h1 class="top-popular__main-title">Самое популярное</h1>
+                <p class="top-popular__main-description">
+                  продавцы, которые имеют высокий рейтинг!
+                </p>
+              </div>
+
+              <div class="top-popular__all-products">
+                <p class="top-popular__main-description">Все товары</p>
+                <img src="/images/main/arrow.png" alt="arrow" />
+              </div>
+            </nav>
+
+            <div class="top-popular__main-cards">
+              <div>
+                <img
+                  class="top-popular__main-img"
+                  src="/images/main/card-1.png"
+                  alt="card" />
+                <p class="top-popular__main-cardName">Шопперы</p>
+              </div>
+              <div class="top-popular__main-cardsRight">
+                <img class="card1" src="/images/main/card-2.png" alt="card" />
+                <div class="container__cards">
+                  <img src="/images/main/card-3.png" alt="card" />
+                  <img src="/images/main/card-4.png" alt="card" />
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section class="photo">
+        <div class="container">
+          <div class="photo__blocks">
+            <div class="photo__left-block">
+              <img
+                class="photo__pangolin"
+                src="/images/main/Pangolin.png"
+                alt="pangolin" />
+              <h1 class="photo__title">Хотите купить вещь в подарок?</h1>
+              <p class="photo__description">
+                Выбирайте готовые подарочные наборы или укажите критерии по
+                которым мы соберем для Вас уникальный бокс.
+              </p>
+              <div class="photo__btns">
+                <input
+                  class="photo__btn1"
+                  type="button"
+                  value="Перейти к наборам" />
+                <input class="photo__btn2" type="button" value="Создай свой" />
+              </div>
+            </div>
+
+            <img
+              src="/images/main/Photo.png"
+              alt="don't touch my lunch"
+              class="dont-touch" />
+          </div>
+        </div>
+      </section>
+
+      <div class="container">
+        <section class="items">
+          <div style="position: relative">
+            <img src="/images/main/Sweater.png" alt="Sweater" class="sweater" />
+            <img
+              class="items__ellipse1"
+              src="/images/main/Ellipse-1.png"
+              alt="ellipse" />
+            <img
+              class="items__ellipse2"
+              src="/images/main/Ellipse-2.png"
+              alt="ellipse" />
+          </div>
+
+          <div class="items__right-block">
+            <h1 class="items__title">
+              Здесь ты сможешь продавать свои самые годные луки! А мы все
+              сделаем за тебя!
+            </h1>
+            <p class="items__description">
+              Прежде чем отправить вещи покупателю, мы производим тепловую
+              обработку вещей, чтобы все были довольны!
+            </p>
+            <nav>
+              <ul class="items__list">
+                <li><img src="/images/main/product-1.png" alt="product" /></li>
+                <li><img src="/images/main/product-2.png" alt="product" /></li>
+                <li><img src="/images/main/product-3.png" alt="product" /></li>
+                <li><img src="/images/main/product-4.png" alt="product" /></li>
+              </ul>
+            </nav>
+          </div>
+        </section>
+      </div>
+
+      <section class="idea">
+        <div class="container">
+          <div class="idea__main">
+            <div class="idea__left-block">
+              <h1 class="idea__title">
+                У вас своя УНИКАЛЬНАЯ идея по продажам?
+              </h1>
+              <p class="idea__description">
+                Расскажем лайфхаки и ознакомим с технологией передачи товара,
+                предоставим образцы запечатанной одежды.
+              </p>
+            </div>
+
+            <div class="idea__images">
+              <img
+                class="idea__image1"
+                src="/images/main/rocket-1.png"
+                alt="rocket" />
+              <img
+                class="idea__image2"
+                src="/images/main/lamp.png"
+                alt="rocket" />
+              <img
+                class="idea__image3"
+                src="/images/main/rocket-2.png"
+                alt="rocket" />
+            </div>
+          </div>
+
+          <div class="container__form">
+            <p class="idea__title-inputs">
+              Введите свои контактные данные, и наш менеджер свяжется с Вами в
+              течении 1 часа
+            </p>
+
+            <div class="idea__form">
+              <div class="idea__inputs">
+                <input
+                  class="idea__input-text"
+                  type="text"
+                  placeholder="Ваше имя" />
+                <input
+                  class="idea__input-text"
+                  type="email"
+                  placeholder="Ваша электронная почта" />
+                <input
+                  class="idea__input-text"
+                  type="tel"
+                  placeholder="Ваш номер телефона" />
+              </div>
+              <input class="idea__btn" type="button" value="Заказать" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <section class="footer__main">
+          <div>
+            <h1 class="logo__name">Барахолка.ру</h1>
+            <p class="footer__description">Свежее дыхание твоей одежде</p>
+
+            <div class="footer__contact-info">
+              <span>+12312312312</span>
+              <span>example@gmail.com</span>
+            </div>
+          </div>
+
+          <ul class="footer__ul">
+            <li>Категории</li>
+            <a href=""><li>Обработка</li></a>
+            <a href=""><li>Все товары</li></a>
+            <a href=""><li>Наборы</li></a>
+            <a href=""><li>Продавцы</li></a>
+          </ul>
+
+          <ul class="footer__ul">
+            <li>Информация</li>
+            <a href=""><li>О нас</li></a>
+            <a href=""><li>ЧаВо</li></a>
+            <a href=""><li>Контакты</li></a>
+          </ul>
+
+          <div class="footer__connection">
+            <p class="footer__connection-title">Связаться с менеджером</p>
+            <p class="footer__connection-description">
+              Есть вопрос на который не нашли ответ? Оставьте контакт и наш
+              менеджер свяжеться с вами
+            </p>
+            <input type="tel" placeholder="Номер телефона" />
+          </div>
+        </section>
+
+        <div>
+          <p class="footer__political">
+            <span class="footer__political-en"
+              >© 2023 . All rights reserved.</span
+            >
+            <span style="text-decoration: underline">
+              Политика конфиденциальности
+            </span>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="HeaderMenu.js"></script>
+  </body>
+</html>

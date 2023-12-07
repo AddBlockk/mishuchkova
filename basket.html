@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styleBasket.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Adamina&family=Actor&family=Roboto&family=Akaya+Kanadaka&family=Kelly+Slab&family=Pangolin&display=swap"
+      rel="stylesheet"
+    />
+    <title>Корзина</title>
+  </head>
+  <body>
+    <div
+      class="header__container-wrapper_modal"
+      style="transform: translate(0px, -100%); display: none">
+      <menu>
+        <ul class="wrapper_modal-list">
+          <li class="wrapper_modal-list_item">
+            <a href="./index.html" class="wrapper_modal-list_link">Главная</a>
+          </li>
+          <li class="wrapper_modal-list_item">
+            <a href="./tape.html" class="wrapper_modal-list_link">Лента</a>
+          </li>
+          <li class="wrapper_modal-list_item">
+            <a href="./basket.html" class="wrapper_modal-list_link">Корзина</a>
+          </li>
+        </ul>
+      </menu>
+    </div>
+
+    <header>
+      <nav class="header__nav">
+        <h1 class="logo__name">Барахолка.ру</h1>
+        <div class="header__container-wrapper_but">
+          <img src="images/main/Menu.svg" width="100%" />
+        </div>
+        <div class="header__nav-right">
+          <input class="input__search" type="text" placeholder="Поиск" />
+          <input class="input__tel" type="button" value="+123 123 123 12" />
+          <div class="user-lang">
+            <img src="./images/main/user-icon.png" alt="user" />
+            <span class="languages"
+              ><strong style="color: black">RU</strong>/ENG</span
+            >
+          </div>
+        </div>
+      </nav>
+      <nav class="header__nav-links">
+        <div class="container__nav">
+          <ul class="header__ul">
+            <li>Наборы</li>
+            <li data-active="active">Все товары</li>
+            <li>Обработка</li>
+            <li>Продавцы</li>
+            <li>Информация</li>
+
+            <div style="display: flex; align-items: center">
+              <li class="header__ul-sale">шопперы со скидкой - 25%</li>
+
+              <img src="./images/main/header__nav-links.png" alt="img" />
+            </div>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="container">
+        <section class="product">
+          <div class="product__left-block">
+            <span style="color: #7981ad"
+              >Главная / Все товары / Сумки и аксессуары / Рюкзаки
+              <span class="route">/ Популярные продавцы</span></span
+            >
+            <h1 class="product__title">Популярный рюкзак для тебя</h1>
+            <p class="product__description">Продает: Алевтина Викторовна</p>
+
+            <section class="header__blocks-infoProduct">
+              <div>
+                <span class="product__price">900р</span>
+
+                <div class="product__form-buy">
+                  <button class="product__order-btn">Заказать</button>
+                  <span style="color: #454747; text-align: center"
+                    >Минимальное кол-во: 1</span
+                  >
+                </div>
+              </div>
+
+              <div class="product__parameters">
+                <div>
+                  <h1>Размер</h1>
+                  <ul class="sizes">
+                    <li>xs</li>
+                    <li>s</li>
+                    <li>m</li>
+                    <li>l</li>
+                    <li>xxl</li>
+                  </ul>
+
+                  <a style="text-decoration: underline" href=""
+                    ><p>Подобрать размер</p></a
+                  >
+                </div>
+
+                <div class="pickup__options">
+                  <div>
+                    <h1>Доставка курьером</h1>
+                    <p>
+                      По Астраханской области ( до 30 км ), при заказе от 1000р-
+                      бесплатно
+                    </p>
+                  </div>
+
+                  <div>
+                    <h1>Новая почта</h1>
+                    <p>Стоимость доставки по России по тарифам перевозчика</p>
+                  </div>
+
+                  <div>
+                    <h1>Самовывоз</h1>
+                    <p>Бесплатно со склада</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="photos__model">
+            <img
+              class="photo__model1"
+              src="./images/main/photo-kid-1.png"
+              alt="model"
+            />
+            <div class="photos__model-small">
+              <img
+                class="photo__model2"
+                src="/images/main/photo-kid-2.png"
+                alt="model"
+              />
+              <img
+                class="photo__model3"
+                src="/images/main/photo-kid-3.png"
+                alt="model"
+              />
+              <img
+                class="photo__model4"
+                src="/images/main/photo-kid-4.png"
+                alt="model"
+              />
+            </div>
+          </div>
+        </section>
+      </div>
+    </header>
+    <main>
+      <section class="products">
+        <div class="container">
+          <h1 class="products__title">Похожие твоары</h1>
+
+          <div class="products__items">
+            <div class="product__item">
+              <img src="./images/main/item-1.png" alt="product" />
+              <div class="product__item-info">
+                <h1>Продам худи недорого, красивое</h1>
+                <span>Продает - Валентина Викторовна</span>
+
+                <div class="product__item-infoFooter">
+                  <span>750р</span>
+                  <img
+                    src="./images/main/basketDelete.png"
+                    alt="basketDelete"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="product__item">
+              <img src="./images/main/item-2.png" alt="product" />
+
+              <div class="product__item-info">
+                <h1>Худи оверсайз</h1>
+                <span>Продает - Реликта Валерьевна</span>
+
+                <div class="product__item-infoFooter">
+                  <span>350р</span>
+                  <img
+                    src="./images/main/basketDelete.png"
+                    alt="basketDelete"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="product__item">
+              <img src="./images/main/item-3.png" alt="product" />
+
+              <div class="product__item-info">
+                <h1>Милое, эко-friendly, продам</h1>
+                <span>Продает - Неизвестный</span>
+
+                <div class="product__item-infoFooter">
+                  <span>11000р</span>
+                  <img
+                    src="./images/main/basketDelete.png"
+                    alt="basketDelete"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="product__item">
+              <img src="./images/main/item-4.png" alt="product" />
+
+              <div class="product__item-info">
+                <h1>Яркий, сочный худак</h1>
+                <span>Продает - Иванченко Ростик</span>
+
+                <div class="product__item-infoFooter">
+                  <span>600р</span>
+                  <img
+                    src="./images/main/basketDelete.png"
+                    alt="basketDelete"
+                  />
+                </div>
+              </div>
+            </div>
+            
+        </div>
+      </section>
+
+      <div class="container">
+      <div class="exchange">
+        
+      <p>Вторичный обмен одеждой - это процесс обмена уже использованной одеждой между людьми. Этот вид обмена становится все более популярным в связи с растущим интересом к устойчивому потреблению и уменьшению воздействия на окружающую среду.</p>
+      <p>Люди могут участвовать в вторичном обмене одеждой различными способами. Некоторые предпочитают организовывать обменные вечера или ярмарки, где они могут обмениваться своей одеждой с другими участниками. Другие выбирают онлайн-платформы, где они могут выставлять свою одежду на обмен или продажу.</p>
+      <p>Вторичный обмен одеждой имеет множество преимуществ. Во-первых, это помогает уменьшить количество отходов, поскольку одежда не выбрасывается, а используется снова. Во-вторых, это позволяет людям экономить деньги, так как они могут получить новую одежду без необходимости покупки. Также это способствует развитию сообщества, поскольку участники могут общаться и поддерживать друг друга.</p>
+      <p>
+        В целом, вторичный обмен одеждой - это отличный способ не только экономить деньги, но и делать что-то полезное для окружающей среды.</p>
+      </div>
+      </div>
+        <section class="idea">
+        <div class="container">
+          <div class="idea__main">
+            <div class="idea__left-block">
+              <h1 class="idea__title">
+                У вас своя УНИКАЛЬНАЯ идея по продажам?
+              </h1>
+              <p class="idea__description">
+                Расскажем лайфхаки и ознакомим с технологией передачи товара,
+                предоставим образцы запечатанной одежды.
+              </p>
+            </div>
+
+            <div class="idea__images">
+              <img
+                class="idea__image1"
+                src="./images/main/rocket-1.png"
+                alt="rocket"
+              />
+              <img
+                class="idea__image2"
+                src="./images/main/lamp.png"
+                alt="rocket"
+              />
+              <img
+                class="idea__image3"
+                src="./images/main/rocket-2.png"
+                alt="rocket"
+              />
+            </div>
+          </div>
+
+          <div>
+            <p class="idea__title-inputs">
+              Введите свои контактные данные, и наш менеджер свяжется с Вами в
+              течении 1 часа
+            </p>
+
+            <div class="idea__form">
+              <div class="idea__inputs">
+                <input
+                  class="idea__input-text"
+                  type="text"
+                  placeholder="Ваше имя"
+                />
+                <input
+                  class="idea__input-text"
+                  type="email"
+                  placeholder="Ваша электронная почта"
+                />
+                <input
+                  class="idea__input-text"
+                  type="tel"
+                  placeholder="Ваш номер телефона"
+                />
+              </div>
+              <input class="idea__btn" type="button" value="Заказать" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <section class="footer__main">
+          <div>
+            <h1 class="logo__name">Барахолка.ру</h1>
+            <p class="footer__description">Свежее дыхание твоей одежде</p>
+
+            <div class="footer__contact-info">
+              <span>+12312312312</span>
+              <span>example@gmail.com</span>
+            </div>
+          </div>
+
+          <ul class="footer__ul">
+            <li>Категории</li>
+            <a href=""><li>Обработка</li></a>
+            <a href=""><li>Все товары</li></a>
+            <a href=""><li>Наборы</li></a>
+            <a href=""><li>Продавцы</li></a>
+          </ul>
+
+          <ul class="footer__ul">
+            <li>Информация</li>
+            <a href=""><li>О нас</li></a>
+            <a href=""><li>ЧаВо</li></a>
+            <a href=""><li>Контакты</li></a>
+          </ul>
+
+          <div class="footer__connection">
+            <p class="footer__connection-title">Связаться с менеджером</p>
+            <p class="footer__connection-description">
+              Есть вопрос на который не нашли ответ? Оставьте контакт и наш
+              менеджер свяжеться с вами
+            </p>
+            <input type="tel" placeholder="Номер телефона" />
+          </div>
+        </section>
+
+        <div>
+          <p class="footer__political">
+            <span class="footer__political-en"
+              >© 2023 . All rights reserved.</span
+            >
+            <span style="text-decoration: underline">
+              Политика конфиденциальности
+            </span>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="HeaderMenu.js"></script>
+  </body>
+</html>
