@@ -3,7 +3,7 @@ document
   .addEventListener("click", function () {
     console.log("вывод");
 
-    let modal = document.querySelector(".header__container-wrapper_modal");
+    const modal = document.querySelector(".header__container-wrapper_modal");
     let body = document.querySelector("body");
 
     console.log(modal.style.transform);
@@ -16,10 +16,16 @@ document
     }, 100);
 
     modal.style.display = "block";
-
-    body.style.overflowY =
-      body.style.overflowY === "hidden" ? "auto" : "hidden";
+    body.style.overflowY = "hidden";
   });
+
+document.querySelector(".cross").addEventListener("click", function () {
+  const modal = document.querySelector(".header__container-wrapper_modal");
+  modal.style.transform = "translate(0px, -100%)";
+  setTimeout(() => {
+    modal.style.display = "none";
+  }, 1000); // задержк
+});
 
 window.addEventListener(
   "resize",

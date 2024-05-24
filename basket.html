@@ -3,37 +3,97 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styleBasket.css" />
+    <link rel="stylesheet" href="css/basket.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Adamina&family=Actor&family=Roboto&family=Akaya+Kanadaka&family=Kelly+Slab&family=Pangolin&display=swap"
-      rel="stylesheet"
-    />
-    <title>Корзина</title>
+      rel="stylesheet" />
+    <title>О товаре</title>
   </head>
   <body>
     <div
       class="header__container-wrapper_modal"
-      style="transform: translate(0px, -100%); display: none">
+      style="transform: translate(0px, -100%); display: none; z-index: 100">
       <menu>
-        <ul class="wrapper_modal-list">
-          <li class="wrapper_modal-list_item">
-            <a href="./index.html" class="wrapper_modal-list_link">Главная</a>
-          </li>
-          <li class="wrapper_modal-list_item">
-            <a href="./tape.html" class="wrapper_modal-list_link">Лента</a>
-          </li>
-          <li class="wrapper_modal-list_item">
-            <a href="./basket.html" class="wrapper_modal-list_link">Корзина</a>
-          </li>
-        </ul>
+        <div class="cross">
+          <img src="./images/main/cross.svg" alt="" />
+        </div>
+        <div class="ru-eng">
+          <span class="languages"
+            ><strong style="color: black">RU</strong>/ENG</span
+          >
+          <img src="./images/main/user.png" alt="" />
+        </div>
+        <div class="button__all__menu">
+          <button class="button__all__menu--disabled">Обработка</button>
+          <button class="button__all__menu-active">Все товары</button>
+        </div>
+        <div>
+          <div class="type__clothes">
+            <ul>
+              <li class="type__clothes--active">Толстовки</li>
+              <li>Свитшоты</li>
+              <li>Футболки</li>
+              <li>Поло</li>
+              <li>Жилетки</li>
+              <li>Рюкзаки</li>
+            </ul>
+            <ul>
+              <li>Бананки</li>
+              <li>Эко-сумки</li>
+              <li>Пледы</li>
+              <li>Носки</li>
+              <li>Маски</li>
+              <li>Шопперы</li>
+            </ul>
+          </div>
+          <ul class="wrapper_modal-list">
+            <li class="wrapper_modal-list_item">
+              <a href="./index.html" class="wrapper_modal-list_link">Главная</a>
+            </li>
+            <li class="wrapper_modal-list_item">
+              <a href="./tape.html" class="wrapper_modal-list_link">Лента</a>
+            </li>
+            <li class="wrapper_modal-list_item">
+              <a href="./basket.html" class="wrapper_modal-list_link"
+                >О товаре</a
+              >
+            </li>
+            <li class="wrapper_modal-list_item">
+              <a href="./info.html" class="wrapper_modal-list_link"
+                >Информация</a
+              >
+            </li>
+            <li class="wrapper_modal-list_item">
+              <a href="./production.html" class="wrapper_modal-list_link"
+                >Производство</a
+              >
+            </li>
+            <li class="wrapper_modal-list_item">
+              <a href="./sets.html" class="wrapper_modal-list_link">Наборы</a>
+            </li>
+          </ul>
+          <div class="soc-seti--menu">
+            <input
+              class="input__tel--menu"
+              type="button"
+              value="+123 123 123 12" />
+            <div class="soc-seti--items">
+              <img src="./images/main/whatsapp.png" alt="" />
+              <img src="./images/main/viber.png" alt="" />
+              <img src="./images/main/telegram.png" alt="" />
+            </div>
+          </div>
+        </div>
       </menu>
     </div>
 
     <header>
       <nav class="header__nav">
-        <h1 class="logo__name">Барахолка.ру</h1>
+        <a href="./index.html">
+          <h1 class="logo__name">Барахолка.ру</h1>
+        </a>
         <div class="header__container-wrapper_but">
           <img src="images/main/Menu.svg" width="100%" />
         </div>
@@ -51,15 +111,15 @@
       <nav class="header__nav-links">
         <div class="container__nav">
           <ul class="header__ul">
-            <li>Наборы</li>
-            <li data-active="active">Все товары</li>
-            <li>Обработка</li>
-            <li>Продавцы</li>
-            <li>Информация</li>
-
+            <li><a href="./sets.html">Наборы</a></li>
+            <li><a href="./tape.html">Все товары</a></li>
+            <li data-active="active">
+              <a href="#" class="active__button">Пошив</a>
+            </li>
+            <li><a href="./production.html">Производство</a></li>
+            <li><a href="./info.html">Информация</a></li>
             <div style="display: flex; align-items: center">
               <li class="header__ul-sale">шопперы со скидкой - 25%</li>
-
               <img src="./images/main/header__nav-links.png" alt="img" />
             </div>
           </ul>
@@ -130,24 +190,20 @@
             <img
               class="photo__model1"
               src="./images/main/photo-kid-1.png"
-              alt="model"
-            />
+              alt="model" />
             <div class="photos__model-small">
               <img
                 class="photo__model2"
                 src="/images/main/photo-kid-2.png"
-                alt="model"
-              />
+                alt="model" />
               <img
                 class="photo__model3"
                 src="/images/main/photo-kid-3.png"
-                alt="model"
-              />
+                alt="model" />
               <img
                 class="photo__model4"
                 src="/images/main/photo-kid-4.png"
-                alt="model"
-              />
+                alt="model" />
             </div>
           </div>
         </section>
@@ -169,74 +225,83 @@
                   <span>750р</span>
                   <img
                     src="./images/main/basketDelete.png"
-                    alt="basketDelete"
-                  />
+                    alt="basketDelete" />
                 </div>
               </div>
             </div>
             <div class="product__item">
               <img src="./images/main/item-2.png" alt="product" />
-
               <div class="product__item-info">
                 <h1>Худи оверсайз</h1>
                 <span>Продает - Реликта Валерьевна</span>
-
                 <div class="product__item-infoFooter">
                   <span>350р</span>
                   <img
                     src="./images/main/basketDelete.png"
-                    alt="basketDelete"
-                  />
+                    alt="basketDelete" />
                 </div>
               </div>
             </div>
             <div class="product__item">
               <img src="./images/main/item-3.png" alt="product" />
-
               <div class="product__item-info">
                 <h1>Милое, эко-friendly, продам</h1>
                 <span>Продает - Неизвестный</span>
-
                 <div class="product__item-infoFooter">
                   <span>11000р</span>
                   <img
                     src="./images/main/basketDelete.png"
-                    alt="basketDelete"
-                  />
+                    alt="basketDelete" />
                 </div>
               </div>
             </div>
             <div class="product__item">
               <img src="./images/main/item-4.png" alt="product" />
-
               <div class="product__item-info">
                 <h1>Яркий, сочный худак</h1>
                 <span>Продает - Иванченко Ростик</span>
-
                 <div class="product__item-infoFooter">
                   <span>600р</span>
                   <img
                     src="./images/main/basketDelete.png"
-                    alt="basketDelete"
-                  />
+                    alt="basketDelete" />
                 </div>
               </div>
             </div>
-            
+          </div>
         </div>
       </section>
 
       <div class="container">
-      <div class="exchange">
-        
-      <p>Вторичный обмен одеждой - это процесс обмена уже использованной одеждой между людьми. Этот вид обмена становится все более популярным в связи с растущим интересом к устойчивому потреблению и уменьшению воздействия на окружающую среду.</p>
-      <p>Люди могут участвовать в вторичном обмене одеждой различными способами. Некоторые предпочитают организовывать обменные вечера или ярмарки, где они могут обмениваться своей одеждой с другими участниками. Другие выбирают онлайн-платформы, где они могут выставлять свою одежду на обмен или продажу.</p>
-      <p>Вторичный обмен одеждой имеет множество преимуществ. Во-первых, это помогает уменьшить количество отходов, поскольку одежда не выбрасывается, а используется снова. Во-вторых, это позволяет людям экономить деньги, так как они могут получить новую одежду без необходимости покупки. Также это способствует развитию сообщества, поскольку участники могут общаться и поддерживать друг друга.</p>
-      <p>
-        В целом, вторичный обмен одеждой - это отличный способ не только экономить деньги, но и делать что-то полезное для окружающей среды.</p>
+        <div class="exchange">
+          <p>
+            Вторичный обмен одеждой - это процесс обмена уже использованной
+            одеждой между людьми. Этот вид обмена становится все более
+            популярным в связи с растущим интересом к устойчивому потреблению и
+            уменьшению воздействия на окружающую среду.
+          </p>
+          <p>
+            Люди могут участвовать в вторичном обмене одеждой различными
+            способами. Некоторые предпочитают организовывать обменные вечера или
+            ярмарки, где они могут обмениваться своей одеждой с другими
+            участниками. Другие выбирают онлайн-платформы, где они могут
+            выставлять свою одежду на обмен или продажу.
+          </p>
+          <p>
+            Вторичный обмен одеждой имеет множество преимуществ. Во-первых, это
+            помогает уменьшить количество отходов, поскольку одежда не
+            выбрасывается, а используется снова. Во-вторых, это позволяет людям
+            экономить деньги, так как они могут получить новую одежду без
+            необходимости покупки. Также это способствует развитию сообщества,
+            поскольку участники могут общаться и поддерживать друг друга.
+          </p>
+          <p>
+            В целом, вторичный обмен одеждой - это отличный способ не только
+            экономить деньги, но и делать что-то полезное для окружающей среды.
+          </p>
+        </div>
       </div>
-      </div>
-        <section class="idea">
+      <section class="idea">
         <div class="container">
           <div class="idea__main">
             <div class="idea__left-block">
@@ -253,18 +318,15 @@
               <img
                 class="idea__image1"
                 src="./images/main/rocket-1.png"
-                alt="rocket"
-              />
+                alt="rocket" />
               <img
                 class="idea__image2"
                 src="./images/main/lamp.png"
-                alt="rocket"
-              />
+                alt="rocket" />
               <img
                 class="idea__image3"
                 src="./images/main/rocket-2.png"
-                alt="rocket"
-              />
+                alt="rocket" />
             </div>
           </div>
 
@@ -279,18 +341,15 @@
                 <input
                   class="idea__input-text"
                   type="text"
-                  placeholder="Ваше имя"
-                />
+                  placeholder="Ваше имя" />
                 <input
                   class="idea__input-text"
                   type="email"
-                  placeholder="Ваша электронная почта"
-                />
+                  placeholder="Ваша электронная почта" />
                 <input
                   class="idea__input-text"
                   type="tel"
-                  placeholder="Ваш номер телефона"
-                />
+                  placeholder="Ваш номер телефона" />
               </div>
               <input class="idea__btn" type="button" value="Заказать" />
             </div>
@@ -314,7 +373,7 @@
 
           <ul class="footer__ul">
             <li>Категории</li>
-            <a href=""><li>Обработка</li></a>
+            <a href=""><li>Пошив</li></a>
             <a href=""><li>Все товары</li></a>
             <a href=""><li>Наборы</li></a>
             <a href=""><li>Продавцы</li></a>

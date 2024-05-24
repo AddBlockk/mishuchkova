@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/header.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,23 +17,84 @@
       class="header__container-wrapper_modal"
       style="transform: translate(0px, -100%); display: none">
       <menu>
-        <ul class="wrapper_modal-list">
-          <li class="wrapper_modal-list_item">
-            <a href="./index.html" class="wrapper_modal-list_link">Главная</a>
-          </li>
-          <li class="wrapper_modal-list_item">
-            <a href="./tape.html" class="wrapper_modal-list_link">Лента</a>
-          </li>
-          <li class="wrapper_modal-list_item">
-            <a href="./basket.html" class="wrapper_modal-list_link">Корзина</a>
-          </li>
-        </ul>
+        <div class="cross">
+          <img src="./images/main/cross.svg" alt="" />
+        </div>
+        <div class="ru-eng">
+          <span class="languages"
+            ><strong style="color: black">RU</strong>/ENG</span
+          >
+          <img src="./images/main/user.png" alt="" />
+        </div>
+        <div class="button__all__menu">
+          <button class="button__all__menu--disabled">Обработка</button>
+          <button class="button__all__menu-active">Все товары</button>
+        </div>
+        <div>
+          <div class="type__clothes">
+            <ul>
+              <li class="type__clothes--active">Толстовки</li>
+              <li>Свитшоты</li>
+              <li>Футболки</li>
+              <li>Поло</li>
+              <li>Жилетки</li>
+              <li>Рюкзаки</li>
+            </ul>
+            <ul>
+              <li>Бананки</li>
+              <li>Эко-сумки</li>
+              <li>Пледы</li>
+              <li>Носки</li>
+              <li>Маски</li>
+              <li>Шопперы</li>
+            </ul>
+          </div>
+          <ul class="wrapper_modal-list">
+            <li class="wrapper_modal-list_item">
+              <a href="./index.html" class="wrapper_modal-list_link">Главная</a>
+            </li>
+            <li class="wrapper_modal-list_item">
+              <a href="./tape.html" class="wrapper_modal-list_link">Лента</a>
+            </li>
+            <li class="wrapper_modal-list_item">
+              <a href="./basket.html" class="wrapper_modal-list_link"
+                >О товаре</a
+              >
+            </li>
+            <li class="wrapper_modal-list_item">
+              <a href="./info.html" class="wrapper_modal-list_link"
+                >Информация</a
+              >
+            </li>
+            <li class="wrapper_modal-list_item">
+              <a href="./production.html" class="wrapper_modal-list_link"
+                >Производство</a
+              >
+            </li>
+            <li class="wrapper_modal-list_item">
+              <a href="./sets.html" class="wrapper_modal-list_link">Наборы</a>
+            </li>
+          </ul>
+          <div class="soc-seti--menu">
+            <input
+              class="input__tel--menu"
+              type="button"
+              value="+123 123 123 12" />
+            <div class="soc-seti--items">
+              <img src="./images/main/whatsapp.png" alt="" />
+              <img src="./images/main/viber.png" alt="" />
+              <img src="./images/main/telegram.png" alt="" />
+            </div>
+          </div>
+        </div>
       </menu>
     </div>
 
     <header>
       <nav class="header__nav">
-        <h1 class="logo__name">Барахолка.ру</h1>
+        <a href="./index.html">
+          <h1 class="logo__name">Барахолка.ру</h1>
+        </a>
         <div class="header__container-wrapper_but">
           <img src="images/main/Menu.svg" width="100%" />
         </div>
@@ -50,16 +112,18 @@
       <nav class="header__nav-links">
         <div class="container__nav">
           <ul class="header__ul">
-            <li>Наборы</li>
-            <li data-active="active">Все товары</li>
-            <li>Обработка</li>
-            <li>Продавцы</li>
-            <li>Информация</li>
-
+            <li><a href="./sets.html">Наборы</a></li>
+            <li>
+              <a href="./tape.html">Все товары</a>
+            </li>
+            <li>
+              <a href="./basket.html">Пошив</a>
+            </li>
+            <li><a href="./production.html">Производство</a></li>
+            <li><a href="./info.html">Информация</a></li>
             <div style="display: flex; align-items: center">
               <li class="header__ul-sale">шопперы со скидкой - 25%</li>
-
-              <img src="/images/main/header__nav-links.png" alt="img" />
+              <img src="./images/main/header__nav-links.png" alt="img" />
             </div>
           </ul>
         </div>
@@ -275,7 +339,7 @@
 
           <ul class="footer__ul">
             <li>Категории</li>
-            <a href=""><li>Обработка</li></a>
+            <a href=""><li>Пошив</li></a>
             <a href=""><li>Все товары</li></a>
             <a href=""><li>Наборы</li></a>
             <a href=""><li>Продавцы</li></a>
