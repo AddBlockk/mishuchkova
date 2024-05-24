@@ -282,6 +282,7 @@ header {
   transition: 150ms ease-in-out;
   background-color: #fff;
   cursor: pointer;
+  font-family: "Akaya Kanadaka", sans-serif;
   margin-bottom: 28px;
 }
 
@@ -332,12 +333,16 @@ header {
   font-weight: 700;
   line-height: 105.5%;
   align-items: end;
-  font-family: "Aleo", sans-serif;
+  font-family: "Akaya Kanadaka", sans-serif;
   color: #c4c4c4;
 }
 
 .ready__made-block--more {
   padding: 0 20px;
+}
+
+.ready__made-block--more h3 {
+  font-weight: 500;
 }
 
 .product__page {
